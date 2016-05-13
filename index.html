@@ -23,6 +23,7 @@
     <title>Hack Germany 2016</title>
     
     <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     
     <style type="text/css">
@@ -43,11 +44,20 @@
 
         body {
             font-family: AbadiLight;
-            font-size: 120%;
             margin: 0;
             padding: 0;
             background-image: url(images/dots.png);
             background-size: 1.5%;
+            font-size: 180%;
+        }
+        
+        h3 {
+            font-size: 180%;
+        }
+        
+        b {
+            font-family: AbadiBold;
+            font-weight: normal;
         }
         
         .segment {
@@ -59,6 +69,7 @@
         .barred::after, .barred::before {
             content: '';
             position: absolute;
+            pointer-events: none;
             left: 0; 
             right: 0;
             z-index: 5;
@@ -100,38 +111,105 @@
             background-repeat: repeat-x;
         }
         
-        #content-block > div {
+        #content-block .content-part {
+            text-decoration: none;
             box-sizing: padding-box;
             overflow: hidden;
-            padding: 8%;
+            padding: 5vw 6vw;
             position: absolute;
             top: 0; 
             bottom: 0; 
             left: 0; 
             right: 0;
-            font-size: 75%;
             display: inline-block;
         }
         
-        #content-block h2 {
-            margin-top: 0;
+        #content-block .open-icon {
+            display: inline-block;
+            position: absolute;
+            top: 2vw; right: 2vw;
         }
         
-        div#left-block {
+        #content-block .image-container {
+            position: absolute;
+            bottom: 2vw;
+            left: 0;
+            right: 0;
+            text-align: center;
+            display: block;
+        }
+        
+        #content-block .image-container img {
+            width: 40%;
+        }
+        
+        #content-block h3 {
+            margin-top: 0;
+            margin-bottom: 2vw;
+        }
+        
+        #content-block #left-block {
             background-color: black;
             color: white;
             right: 50%;
         }
         
-        div#right-block {
+        #content-block #left-block b {
+            color: #FEDC4A;
+        }
+        
+        #content-block #left-block:hover {
+            background-color: #404040;
+        }
+        
+        #content-block #right-block {
             background-color: white;
             color: black;
             left: 50%;
         }
         
+        #content-block #right-block:hover {
+            background-color: #DFDFDF;
+        }
+        
         #footer-block {
             height: 7vh;
             background-color: #9fff9f;
+        }
+        
+        
+        @media (max-width: 1024px) {
+        
+            body {
+                font-size: 160%;
+            }
+                
+            #content-block .image-container img {
+                width: 50%;
+            }
+             
+        }
+        @media (max-width: 600px) {
+        
+            body {
+                font-size: 140%;
+            }
+            
+            #content-block .image-container img {
+                width: 60%;
+            }
+         
+        }
+        @media (max-width: 400px) {
+            
+            body {
+                font-size: 120%;
+            }
+            
+            #content-block .image-container img {
+                width: 70%;
+            }
+            
         }
         
     </style>
@@ -147,15 +225,35 @@
     </div>
     
     <div class="segment barred" id="content-block">
-        <div id="left-block">
-            <h2><b>Inno</b>{Hacks}</h2>
-            5274809000000016007, 5274809000000016009, 5274809000000016011, 5274809000000016013, 5274809000000020011, 5274809000000020013, 5274809000000020017, 5274809000000026005, 5274809000000027009, 5274809000000030005, 5274809000000030007, 5274809000000031001, 5274809000000031003, 5274809000000042003, 5274809000000110005, 5274809000000117027, 5274809000000117067, 5274809000000117075
-        </div>
+        <a href="http://inno-hacks.de" class="content-part" id="left-block">
+            <h3><b>Inno</b>{Hacks}</h3>
+            
+            <b>Location:</b> Karlsruhe<br /><br />
+            <b>"Disrupt the tech industry with your innovative ideas"</b> - Inno{Hacks} is one of the biggest hackathons in Southern Germany with more than 100 participants competing in the categories Technology Innovation, UX Innovation and Social Innovation.
+            
+            <div class="image-container">
+                <img src="images/hackerstolz_white.png" />
+            </div>
+            
+            <div class="open-icon">
+                <h3><i class="material-icons">open_in_new</i></h3>
+            </div>
+        </a>
         
-        <div id="right-block">
-            <h2>Microsoft Hackathon</h2>
-            5274809000000016007, 5274809000000016009, 5274809000000016011, 5274809000000016013, 5274809000000020011, 5274809000000020013, 5274809000000020017, 5274809000000026005, 5274809000000027009, 5274809000000030005, 5274809000000030007, 5274809000000031001, 5274809000000031003, 5274809000000042003, 5274809000000110005, 5274809000000117027, 5274809000000117067, 5274809000000117075
-        </div>
+        <a href="" class="content-part" id="right-block">
+            <h3><b>MCP</b> Hack</h3>
+            
+            <b>Location:</b> Berlin<br /><br />
+            <b>"Do great things"</b> - Once again will Microsoft invite students, experts and technology enthusiasts to shape the world with their ideas. This years theme will be the usage of IoT and the Cloud to create the connected world of tomorrow.
+            
+            <div class="image-container">
+                <img src="images/microsoft.png" />
+            </div>
+            
+            <div class="open-icon">
+                <h3><i class="material-icons">open_in_new</i></h3>
+            </div>
+        </a>
     </div>
     
     <div class="segment" id="footer-block">
