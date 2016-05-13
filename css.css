@@ -1,0 +1,219 @@
+
+/* ---- FONTS ---- */
+
+@font-face {
+    font-family: AbadiLight;
+    src: url('fonts/Abadi MT Condensed Light Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AbadiBold;
+    src: url('fonts/Abadi MT Condensed Extra Bold Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ---- GENERAL ELEMENTS ---- */
+
+body {
+    font-family: AbadiLight;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/dots.png);
+    background-size: 1.5%;
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 180%;
+}
+
+b {
+    font-family: AbadiBold;
+    font-weight: normal;
+}
+
+
+/* ---- SEGMENTS ---- */
+
+.segment {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.barred::after, .barred::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    left: 0; 
+    right: 0;
+    z-index: 5;
+}
+
+#title-block {
+    height: 35vh;
+    background: url(images/title.png) no-repeat center center fixed;
+    background-size: auto 85%;
+    -webkit-background-size: auto 85%;
+    -moz-background-size: auto 85%;
+    -o-background-size: auto 85%;
+    background-attachment: scroll;
+}
+
+#green-block{
+    height: 1.5vh;
+    background-color: #9fff9f;
+}
+
+#content-block {
+    background-color: white;
+}
+
+#content-block::before {
+    top: 0;
+    height: 25px;
+    background-image: url(images/spike_down.png);
+    background-size: 2vh;
+    background-repeat: repeat-x;
+}
+
+#content-block::after {
+    bottom: 0;
+    height: 25px;
+    background-image: url(images/spike_up.png);
+    background-position: bottom;
+    background-size: 2vh;
+    background-repeat: repeat-x;
+}
+
+#content-block td {
+    position: relative;
+    width: 50%;
+    vertical-align: top;
+}
+
+#content-block a {
+    text-decoration: none;
+    box-sizing: padding-box;
+    padding: 5vw 6vw;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+
+#content-block .open-icon {
+    display: inline-block;
+    position: absolute;
+    top: 2vw; right: 2vw;
+}
+
+#content-block .image-container {
+    margin: 3vw 0 -1vw;
+    text-align: center;
+    display: block;
+}
+
+#content-block .image-container img {
+    width: 50%;
+}
+
+#content-block h3 {
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+#content-block #left-block {
+    background-color: black;
+    color: white;
+}
+
+#content-block #left-block b {
+    color: #FEDC4A;
+}
+
+#content-block #left-block:hover {
+    background-color: #404040;
+}
+
+#content-block #right-block {
+    background-color: white;
+    color: black;
+}
+
+#content-block #right-block:hover {
+    background-color: #DFDFDF;
+}
+
+#footer-block {
+    background-color: #9fff9f;
+    padding: 1vw 6vw;
+    font-size: 80%;
+}
+
+#footer-block table {
+    width: 100%;
+}
+
+#footer-block td {
+    vertical-align: top;
+}
+
+#footer-block .right {
+    text-align: right;
+}
+
+#footer-block .icon-love {
+    vertical-align: text-top;
+    font-size: 100%;
+    color: crimson;
+}
+
+#space-block {
+    height: 4vh;
+}
+
+
+/* ---- MOBILE ---- */
+
+@media (max-width: 1024px) {
+
+    body {
+        font-size: 160%;
+    }
+        
+    #content-block .image-container img {
+        width: 70%;
+    }
+     
+}
+@media (max-width: 600px) {
+
+    body {
+        font-size: 140%;
+    }
+    
+    #content-block .image-container img {
+        width: 80%;
+    }
+    
+    #content-block .open-icon h3 i {
+        font-size: 80%;
+    }
+ 
+}
+@media (max-width: 400px) {
+    
+    body {
+        font-size: 120%;
+    }
+    
+    #content-block .image-container img {
+        width: 90%;
+    }
+    
+}

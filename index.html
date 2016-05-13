@@ -22,197 +22,10 @@
     
     <title>Hack Germany 2016</title>
     
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    
-    <style type="text/css">
-        
-        @font-face {
-            font-family: AbadiLight;
-            src: url('fonts/Abadi MT Condensed Light Regular.ttf') format('truetype');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: AbadiBold;
-            src: url('fonts/Abadi MT Condensed Extra Bold Regular.ttf') format('truetype');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        body {
-            font-family: AbadiLight;
-            margin: 0;
-            padding: 0;
-            background-image: url(images/dots.png);
-            background-size: 1.5%;
-            font-size: 180%;
-        }
-        
-        h3 {
-            font-size: 180%;
-        }
-        
-        b {
-            font-family: AbadiBold;
-            font-weight: normal;
-        }
-        
-        .segment {
-            position: relative;
-            width: 100%;
-            margin: 0;
-        }
-        
-        .barred::after, .barred::before {
-            content: '';
-            position: absolute;
-            pointer-events: none;
-            left: 0; 
-            right: 0;
-            z-index: 5;
-        }
-        
-        #title-block {
-            height: 32vh;
-            background: url(images/title.png) no-repeat center center fixed;
-            background-size: auto 85%;
-            -webkit-background-size: auto 85%;
-            -moz-background-size: auto 85%;
-            -o-background-size: auto 85%;
-            background-attachment: scroll;
-        }
-        
-        #green-block{
-            height: 1.5vh;
-            background-color: #9fff9f;
-        }
-        
-        #content-block {
-            height: 57vh;
-        }
-        
-        #content-block::before {
-            top: 0;
-            height: 25px;
-            background-image: url(images/spike_down.png);
-            background-size: 1%;
-            background-repeat: repeat-x;
-        }
-        
-        #content-block::after {
-            bottom: 0;
-            height: 25px;
-            background-image: url(images/spike_up.png);
-            background-position: bottom;
-            background-size: 1%;
-            background-repeat: repeat-x;
-        }
-        
-        #content-block .content-part {
-            text-decoration: none;
-            box-sizing: padding-box;
-            overflow: hidden;
-            padding: 5vw 6vw;
-            position: absolute;
-            top: 0; 
-            bottom: 0; 
-            left: 0; 
-            right: 0;
-            display: inline-block;
-        }
-        
-        #content-block .open-icon {
-            display: inline-block;
-            position: absolute;
-            top: 2vw; right: 2vw;
-        }
-        
-        #content-block .image-container {
-            position: absolute;
-            bottom: 2vw;
-            left: 0;
-            right: 0;
-            text-align: center;
-            display: block;
-        }
-        
-        #content-block .image-container img {
-            width: 40%;
-        }
-        
-        #content-block h3 {
-            margin-top: 0;
-            margin-bottom: 2vw;
-        }
-        
-        #content-block #left-block {
-            background-color: black;
-            color: white;
-            right: 50%;
-        }
-        
-        #content-block #left-block b {
-            color: #FEDC4A;
-        }
-        
-        #content-block #left-block:hover {
-            background-color: #404040;
-        }
-        
-        #content-block #right-block {
-            background-color: white;
-            color: black;
-            left: 50%;
-        }
-        
-        #content-block #right-block:hover {
-            background-color: #DFDFDF;
-        }
-        
-        #footer-block {
-            height: 7vh;
-            background-color: #9fff9f;
-        }
-        
-        
-        @media (max-width: 1024px) {
-        
-            body {
-                font-size: 160%;
-            }
-                
-            #content-block .image-container img {
-                width: 50%;
-            }
-             
-        }
-        @media (max-width: 600px) {
-        
-            body {
-                font-size: 140%;
-            }
-            
-            #content-block .image-container img {
-                width: 60%;
-            }
-         
-        }
-        @media (max-width: 400px) {
-            
-            body {
-                font-size: 120%;
-            }
-            
-            #content-block .image-container img {
-                width: 70%;
-            }
-            
-        }
-        
-    </style>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css.css" />
 </head>
 
 <body>
@@ -225,38 +38,62 @@
     </div>
     
     <div class="segment barred" id="content-block">
-        <a href="http://inno-hacks.de" class="content-part" id="left-block">
-            <h3><b>Inno</b>{Hacks}</h3>
-            
-            <b>Location:</b> Karlsruhe<br /><br />
-            <b>"Disrupt the tech industry with your innovative ideas"</b> - Inno{Hacks} is one of the biggest hackathons in Southern Germany with more than 100 participants competing in the categories Technology Innovation, UX Innovation and Social Innovation.
-            
-            <div class="image-container">
-                <img src="images/hackerstolz_white.png" />
-            </div>
-            
-            <div class="open-icon">
-                <h3><i class="material-icons">open_in_new</i></h3>
-            </div>
-        </a>
-        
-        <a href="" class="content-part" id="right-block">
-            <h3><b>MCP</b> Hack</h3>
-            
-            <b>Location:</b> Berlin<br /><br />
-            <b>"Do great things"</b> - Once again will Microsoft invite students, experts and technology enthusiasts to shape the world with their ideas. This years theme will be the usage of IoT and the Cloud to create the connected world of tomorrow.
-            
-            <div class="image-container">
-                <img src="images/microsoft.png" />
-            </div>
-            
-            <div class="open-icon">
-                <h3><i class="material-icons">open_in_new</i></h3>
-            </div>
-        </a>
+        <table>
+            <tr>
+                <td id="left-block">
+                    <a href="http://inno-hacks.de">
+                        <h3><b>Inno</b>{Hacks}</h3>
+                        
+                        <b>Location:</b> Karlsruhe<br /><br />
+                        <b>"Disrupt the tech industry with your innovative ideas"</b> - Inno{Hacks} is one of the biggest hackathons in Southern Germany with more than 100 participants competing in the categories Technology Innovation, UX Innovation and Social Innovation.
+                        
+                        <div class="image-container">
+                            <img src="images/hackerstolz_white.png" />
+                        </div>
+                        
+                        <div class="open-icon">
+                            <h3><i class="material-icons">open_in_new</i></h3>
+                        </div>
+                    </a>
+                </td>
+                    
+                <td id="right-block">
+                    <a href="">
+                        <h3><b>MCP</b> Hack</h3>
+                        
+                        <b>Location:</b> Berlin<br /><br />
+                        <b>"Do great things"</b> - Once again will Microsoft invite students, experts and technology enthusiasts to shape the world with their ideas. This years theme will be the usage of IoT and the Cloud to create the connected world of tomorrow.
+                        
+                        <div class="image-container">
+                            <img src="images/microsoft.png" />
+                        </div>
+                        
+                        <div class="open-icon">
+                            <h3><i class="material-icons">open_in_new</i></h3>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
     </div>
     
     <div class="segment" id="footer-block">
+        <table>
+            <tr>
+                <td class="left">
+                    Design support by D M B O - Studio für Gestaltung<br />
+                    <a href="www.dmbo.de">www.dmbo.de</a>
+                </td>
+                <td class="right">
+                    <a href="http://www.hackerstolz.de/de/impressum/">Impressum</a><br />
+                    Events made with <i class="material-icons icon-love">favorite</i> by 
+                    <a href="http://www.hackerstolz.de/">Hackerstolz</a> and <a href="https://www.microsoft.com/">Microsoft</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="segment" id="space-block">
     
     </div>
 
