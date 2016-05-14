@@ -99,7 +99,7 @@ b {
 #content-block a {
     text-decoration: none;
     box-sizing: padding-box;
-    padding: 5vw 6vw;
+    padding: 5vw 6vw 12vw;
     display: block;
     width: 100%;
     height: 100%;
@@ -113,9 +113,13 @@ b {
 }
 
 #content-block .image-container {
-    margin: 3vw 0 -1vw;
+    //margin: 3vw 0 -1vw;
     text-align: center;
     display: block;
+    position: absolute;
+    bottom: 3vw; 
+    left: 6vw;
+    right: 6vw;
 }
 
 #content-block .image-container img {
@@ -175,6 +179,7 @@ b {
 
 #space-block {
     height: 4vh;
+    background-color: #9fff9f;
 }
 
 
