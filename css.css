@@ -134,10 +134,15 @@ b {
     margin-bottom: 2vw;
 }
 
+#content-block .image-container {
+    text-align: center;
+}
+
 #content-block img {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #content-block #left-block {
