@@ -139,7 +139,7 @@ b {
 }
 
 #content-block img {
-    width: 100%;
+    width: 80%;
     max-width: 500px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -204,10 +204,6 @@ b {
 
     body {
         font-size: 140%;
-    }
-    
-    #content-block .image-container img {
-        width: 80%;
     }
     
     #content-block .open-icon h3 i {
