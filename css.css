@@ -57,13 +57,13 @@ b {
 }
 
 #title-block {
-    height: 35vh;
+    height: 33vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
     background: url(images/title.png) no-repeat center center fixed;
-    background-size: auto 85%;
-    -webkit-background-size: auto 85%;
-    -moz-background-size: auto 85%;
-    -o-background-size: auto 85%;
+    background-size: contain;
     background-attachment: scroll;
+    min-height: 240px;
 }
 
 #green-block{
@@ -97,9 +97,14 @@ b {
 
 #content-block a {
     text-decoration: none;
-    width: 80%;
     display: block;
+    position: relative;
+    flex: 1;
     color: inherit;
+}
+
+#content-block .inner-content {
+    width: 80%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -115,6 +120,7 @@ b {
 #content-block #right-block {
     flex: 1;
     justify-content: center;
+    display: flex;
 }
 
 #content-block #left-block a,
