@@ -63,7 +63,7 @@ b {
     background: url(images/title.png) no-repeat center center fixed;
     background-size: contain;
     background-attachment: scroll;
-    min-height: 240px;
+    min-height: 200px;
 }
 
 #green-block{
@@ -139,7 +139,7 @@ b {
 }
 
 #content-block img {
-    width: 80%;
+    width: 60%;
     max-width: 500px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -191,6 +191,14 @@ b {
     color: crimson;
 }
 
+#footer-block #dmbo-logo {
+    float: left;
+    display: inline-block;
+    height: 34px;
+    margin: 4px 7px;
+    vertical-align: middle;
+}
+ 
 /* ---- MOBILE ---- */
 
 @media (max-width: 1024px) {
@@ -198,12 +206,23 @@ b {
     body {
         font-size: 160%;
     }
-     
+    
+    #content-block img {
+        width: 70%;
+    }
+    
+    #footer-block #dmbo-logo {
+        height: 28px;
+    }    
 }
 @media (max-width: 600px) {
 
     body {
         font-size: 140%;
+    }
+    
+    .desktop-only {
+        display: none !important;
     }
     
     #content-block .open-icon h3 i {
@@ -212,6 +231,10 @@ b {
 
     #content-block {
         flex-direction: column;
+    }
+    
+    #content-block img {
+        width: 80%;
     }
 }
 @media (max-width: 400px) {
