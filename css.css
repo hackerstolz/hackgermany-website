@@ -25,9 +25,6 @@ body {
     background-image: url(images/dots.png);
     background-size: 1.5%;
     font-size: 180%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 h3 {
@@ -73,8 +70,6 @@ b {
 
 #content-block {
     background-color: white;
-    display: flex;
-    flex: 1;
 }
 
 #content-block::before {
@@ -117,8 +112,9 @@ b {
     top: 2vw; right: 2vw;
 }
 
-#content-block #left-block,
-#content-block #right-block {
+.inno-hacks,
+.mpc-hacks,
+.dj-hacks{
     flex: 1;
     justify-content: center;
     display: flex;
@@ -130,16 +126,6 @@ b {
 }
 
 #content-block .image-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0 5%;
-    text-align: center;
-}
-
-#content-block .image-space {
-    opacity: 0;
     text-align: center;
 }
 
@@ -150,26 +136,34 @@ b {
     margin-bottom: 30px;
 }
 
-#content-block #left-block {
+.inno-hacks {
     background-color: black;
     color: white;
 }
 
-#content-block #left-block b {
+.inno-hacks b {
     color: #FEDC4A;
 }
 
-#content-block #left-block:hover {
+.inno-hacks:hover {
     background-color: #404040;
 }
 
-#content-block #right-block {
+.mpc-hacks {
     background-color: white;
     color: black;
 }
 
-#content-block #right-block:hover {
+.mpc-hacks:hover {
     background-color: #DFDFDF;
+}
+
+.dj-hacks {
+    background-color: #e5e5e5;
+}
+
+.dj-hacks:hover {
+    background-color: #cdcdcd;
 }
 
 #footer-block {
